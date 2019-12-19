@@ -1,0 +1,25 @@
+server:
+  port: 8085
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:mysql:///hema
+    username: root
+    password:
+  redis:
+    host: 127.0.0.1
+  rabbitmq:
+    host: 192.168.164.233
+    virtual-host: /yigou
+    username: yigou
+    password: yigou
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+  instance:
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
+mybatis:
+  type-aliases-package: com.yigou.user.pojo

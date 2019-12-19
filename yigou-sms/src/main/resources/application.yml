@@ -1,0 +1,16 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: sms-service
+  rabbitmq:
+    host: 192.168.164.233
+    virtual-host: /yigou
+    username: yigou
+    password: yigou
+yigou:
+  sms:
+    accessKeyId:  LTAI4FwxvKNBKMnikpUAoGKf
+    AccessKeySecret: gBeHUPiuIKVRzRnoBSWRhCK4VZJFNO
+    signName: 易购商城
+    verifyCodeTemplate: SMS_178990060
